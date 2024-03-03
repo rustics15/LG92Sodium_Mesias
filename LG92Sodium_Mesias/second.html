@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second</title>
+</head>
+<body>
+    <!-- Original image -->
+    <img id="image" src="catlet.jpeg" alt="Original Image" width="200">
+
+    <!-- Buttons -->
+    <button onclick="changeImage()">Change Image</button>
+    <button onclick="revertImage()">Revert Image</button>
+
+    <script>
+        // Function to change the image to another one
+        function changeImage() {
+            document.getElementById("image").src = "doglet.jpeg";
+        }
+
+        // Function to revert the image back to the original one
+        function revertImage() {
+            document.getElementById("image").src = "catlet.jpeg";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <script>
+        // Define a function to display a message in a dialog box
+        function showMessage() {
+            alert("You will be redirected to the second.html web page.");
+        }
+
+        // Attach an event handler to the window.onload event
+        window.onload = function() {
+            // Call the showMessage function when the window loads
+            showMessage();
+            // Redirect to the second.html after a delay (in milliseconds)
+            setTimeout(function() {
+                window.open("second.html", "_self"); //self for new window
+            }, 3000); // Delay of 3 seconds
+        };
+    </script>
+</body>
+</html>
